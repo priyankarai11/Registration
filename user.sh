@@ -43,7 +43,7 @@ echo "---------------------"
 echo "Checking password"
 echo "Enter Password"
 read s
-if [[ ${#s} -ge 7 && "$s" == *[[:lower:]]* && "$s" == *[[:upper:]]*  ]]
+if [[ ${#s} -ge 7 && "$s" == *[[:lower:]]* && "$s" == *[[:upper:]]* && "$s" == *[0-9]* ]]
 then
         echo Valid
 else
