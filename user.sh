@@ -12,3 +12,17 @@ then
 else
 	echo Invalid
 fi
+
+echo "----------------"
+echo "Checking mail"
+echo "Enter mail"
+read e
+pat="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+if [[ $e =~ $pat ]]
+then
+        echo Valid
+else
+        echo Invalid
+fi
+
+
