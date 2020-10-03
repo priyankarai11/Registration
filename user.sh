@@ -26,3 +26,15 @@ else
 fi
 
 
+
+echo "--------------------"
+echo "Checking for mobile number"
+echo "Enter Phone number"
+read num
+p="^([9]{1}[1]{1}) ([0-9]{10})$"
+if [[ $num =~ $p ]]
+then
+        echo Valid
+else
+        echo Invalid
+fi
