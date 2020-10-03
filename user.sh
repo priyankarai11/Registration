@@ -3,7 +3,10 @@ echo "User Registration"
 echo "Enter First name"
 read f
 First="^[A-Za-z]{3,}$"
-if [[ $f =~ $First ]] 
+echo "Enter Last name"
+read l
+Last="^[A-Za-z]{3,}$"
+if [[ $f =~ $First && $l =~ $Last ]]
 then
 	echo Valid
 else
