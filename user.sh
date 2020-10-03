@@ -38,3 +38,15 @@ then
 else
         echo Invalid
 fi
+
+echo "---------------------"
+echo "Checking password"
+echo "Enter Password"
+read s
+p="^[a-z]{8,}$"
+if [[ $s =~ $p ]]
+then
+        echo Valid
+else
+        echo Invalid
+fi
